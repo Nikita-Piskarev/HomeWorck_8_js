@@ -33,7 +33,7 @@
 // 6 Дан массив ['js', 'css', 'jq']. Выведите на экран последний элемент и удалите его .
 
 // const program = ['js', 'css', 'jq'];
-// console.log(program[2]);
+// console.log(program[program.length-1]);
 // const jq = program.pop();
 
 // 7 Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
@@ -112,14 +112,13 @@
 //   { firstName: "Logina", lastName: "Consol`evna", age: 42, gender: "female" },
 // ];
 
-// const callback = function (currentValue, index) {
+// user.forEach((currentValue, index) => {
 //   console.log(`Value:`, currentValue);
 //   console.log(`index:, ${index}`);
 //   console.log(
 //     `Пользователь ${currentValue.firstName} ${currentValue.lastName} является ${currentValue.gender} и ему сейчас ${currentValue.age} лет`
 //   );
-// };
-// user.forEach(callback);
+// });
 
 // 15 Дан массив со следующими объектами внутри:  					{firstName: ‘Test’, lastName: ’Testovich’, age: 42, gender: ‘male’,}, 			{firstName: ‘User’, lastName: ’Userovich’, age: 12, gender: ‘male’,},		{firstName: ‘Test`ya’, lastName: ’Testovna’, age: 16, gender: ‘female’,},		{firstName: ‘Logina’, lastName: ’Consol`evna’, age: 42, gender: ‘female’,}		Создайте новый массив на основании старого массива, добавив каждому пользователю в новом массиве свойство telephoneNumber которое может быть или строкой или числом (на ваше усмотрение).
 
