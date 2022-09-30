@@ -129,13 +129,13 @@
 //   { firstName: "Logina", lastName: "Consol`evna", age: 42, gender: "female" },
 // ];
 
-// const user1 = user.map(function (currentValue, index) {
+// const user1 = user.map(function (currentValue) {
 //   currentValue.telephoneNumber = 2043909580;
-//   return `value`, currentValue;
+//   return currentValue;
 // });
 
 // 16 Дан массив со следующими объектами внутри:
-//{firstName: ‘Test’, lastName: ’Testovich’, age: 27, gender ‘male’,},
+// {firstName: ‘Test’, lastName: ’Testovich’, age: 27, gender ‘male’,},
 // {firstName: ‘User’, lastName: ’Userovich’, age: 12, gender: ‘male’,},		{firstName: ‘Test`ya’, lastName: ’Testovna’, age: 16, gender: ‘female’,},		{firstName: ‘Logina’, lastName: ’Consol`evna’, age: 42, gender: ‘female’,},		{firstName: ‘Undefined’, lastName: ’Undefinovich’, age: 99},			{firstName: ‘Null’, lastName: ’Nullovich’, gender: ‘male’}				Создайте новый массив на основании старого массива, в котором будут только те совершеннолетние пользователи, у которых будет определенный пол.
 
 // const user = [
@@ -147,9 +147,9 @@
 //   { firstName: "Null", lastName: "Nullovich", gender: "male" },
 // ];
 
-// const userFilter = user.filter(function(elem,){
-//     if(typeof elem.gender === 'string' && elem.age > 18) return true;
-// })
+// const userFilter = user.filter(function (elem) {
+//   return elem.gender === "male" && elem.age >= 18;
+// });
 
 // 17 Дан следующий массив [1,2,3, [10,20,30, [100,200,300, [1000, 2000, 3000]]]]. Создайте новый массив на основании старого массива, в котором не будет вложенных массивов.
 
